@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Conditions Checker</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <% if notice %>
+      <meta name="flash-notice" content="<%= notice %>" />
+    <% end %>
+    <% if alert %>
+      <meta name="flash-alert" content="<%= alert %>" />
+    <% end %>
+
+    <%= stylesheet_pack_tag 'application', media: 'all' %>
+    <%= stylesheet_link_tag 'application', media: 'all' %>
+  </head>
+  <body>
+    <div id="app"></div>
+    <%= javascript_pack_tag 'index' %>
+  </body>
+</html>
